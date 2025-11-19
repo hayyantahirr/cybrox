@@ -1,2 +1,187 @@
 @import "tailwindcss";
 
+/* ============================================
+   CUSTOM FONT - NIPPO
+   ============================================ */
+
+/* Nippo Bold - Used for Logo */
+@font-face {
+  font-family: "Nippo";
+  src: url("/fonts/Nippo_Complete/Nippo_Complete/Fonts/WEB/fonts/Nippo-Bold.woff2")
+      format("woff2"),
+    url("/fonts/Nippo_Complete/Nippo_Complete/Fonts/WEB/fonts/Nippo-Bold.woff")
+      format("woff"),
+    url("/fonts/Nippo_Complete/Nippo_Complete/Fonts/WEB/fonts/Nippo-Bold.ttf")
+      format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; /* Ensures text remains visible during font load */
+}
+
+/* ============================================
+   GLOBAL RESET & BASE STYLES
+   ============================================ */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* ============================================
+   BODY & BACKGROUND
+   ============================================ */
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f4eade 0%, #ffffff 100%);
+  transition: background 0.5s ease-out;
+  overflow-x: hidden; /* Prevent horizontal scroll during transitions */
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1b1b1b 100%);
+  }
+}
+
+/* ============================================
+   SMOOTH SCROLLING
+   ============================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ============================================
+   PAGE TRANSITION ANIMATIONS
+   ============================================ */
+
+/* Smooth fade and slide animation for page transitions */
+.page-transition {
+  animation: pageEnter 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade out animation when leaving page */
+@keyframes pageExit {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+/* ============================================
+   CUSTOM SCROLLBAR STYLING
+   ============================================ */
+
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Scrollbar track (background) */
+::-webkit-scrollbar-track {
+  background: #f4eade;
+  border-radius: 10px;
+}
+
+/* Scrollbar thumb (draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #1b1b1b;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+/* Scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2a2a2a;
+}
+
+/* Dark mode scrollbar */
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-track {
+    background: #1b1b1b;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #f4eade;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e5dbc8;
+  }
+}
+
+/* ============================================
+   LINK TRANSITIONS
+   ============================================ */
+
+/* Smooth transitions for all links */
+a {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ============================================
+   UTILITY ANIMATIONS
+   ============================================ */
+
+/* Fade in animation utility class */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Slide up animation utility class */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Scale in animation utility class */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
