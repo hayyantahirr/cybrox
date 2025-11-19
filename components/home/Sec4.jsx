@@ -142,9 +142,7 @@ export default function Sec4() {
                 <div
                   className={`w-16 h-16 ${platform.bgColor} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}
                 >
-                  <div
-                    className={`text-[#1b1b1b] group-hover:bg-linear-to-br ${platform.color} group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300`}
-                  >
+                  <div className="text-[#1b1b1b] transition-all duration-300">
                     {platform.icon}
                   </div>
                 </div>
