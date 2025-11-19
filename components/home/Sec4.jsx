@@ -151,7 +151,7 @@ export default function Sec4() {
                 className={`absolute inset-0 bg-linear-to-br ${platform.color} opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-500`}
               ></div>
 
-              <div className="relative z-100">
+              <div className="relative z-10">
                 {/* Icon */}
                 <div
                   className={`w-16 h-16 ${platform.bgColor} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}
