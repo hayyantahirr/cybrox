@@ -86,7 +86,7 @@ const Navbar = () => {
     { name: "Home", href: "/", path: "/" },
     { name: "About", href: "/about", path: "/about" },
     { name: "Services", href: "/services", path: "/services" },
-    { name: "Portfolio", href: "/portfolio", path: "/portfolio" },
+    { name: "Careers", href: "/careers", path: "/careers" },
     { name: "Contact", href: "/contact", path: "/contact" },
   ];
 
@@ -151,22 +151,23 @@ const Navbar = () => {
                 <Link
                   key={index}
                   href={link.href}
-                  className={`relative px-4 lg:px-6 py-2 font-medium transition-all duration-500 ease-out group
+                  className={`relative px-4 lg:px-6 py-2 font-medium transition-all duration-500 ease-out
                     ${
                       isActive
-                        ? "text-[#1B1B1B] dark:text-white"
-                        : "text-[#1B1B1B]/70 dark:text-[#F4EADE]/70"
-                    }
-                    hover:text-[#1B1B1B] dark:hover:text-white`}
+                        ? "text-[#1B1B1B] dark:text-white cursor-default"
+                        : "text-[#1B1B1B]/70 dark:text-[#F4EADE]/70 group hover:text-[#1B1B1B] dark:hover:text-white"
+                    }`}
                 >
                   {/* Link text with higher z-index to stay above backgrounds */}
                   <span className="relative z-10">{link.name}</span>
 
-                  {/* HOVER EFFECT: Background that scales in on hover */}
-                  <span
-                    className="absolute inset-0 bg-[#F4EADE]/20 dark:bg-[#F4EADE]/10 rounded-lg 
-                    scale-0 group-hover:scale-100 transition-transform duration-500 ease-out"
-                  />
+                  {/* HOVER EFFECT: Background that scales in on hover (only for inactive tabs) */}
+                  {!isActive && (
+                    <span
+                      className="absolute inset-0 bg-[#F4EADE]/20 dark:bg-[#F4EADE]/10 rounded-lg 
+                      scale-0 group-hover:scale-100 transition-transform duration-500 ease-out"
+                    />
+                  )}
 
                   {/* ACTIVE INDICATOR: Animated bottom border */}
                   <span
@@ -177,7 +178,7 @@ const Navbar = () => {
                     }`}
                   />
 
-                  {/* ACTIVE BACKGROUND: Subtle glow effect for active tab */}
+                  {/* ACTIVE BACKGROUND: Subtle glow effect for active tab (always visible when active) */}
                   <span
                     className={`absolute inset-0 bg-gradient-to-r from-[#F4EADE]/30 via-[#F4EADE]/20 to-[#F4EADE]/30 
                     dark:from-[#F4EADE]/20 dark:via-[#F4EADE]/10 dark:to-[#F4EADE]/20 rounded-lg
@@ -246,10 +247,9 @@ const Navbar = () => {
                   className={`relative block px-4 py-3 font-medium rounded-lg transition-all duration-500 ease-out
                     ${
                       isActive
-                        ? "bg-gradient-to-r from-[#F4EADE]/30 to-[#F4EADE]/20 dark:from-[#F4EADE]/20 dark:to-[#F4EADE]/10 text-[#1B1B1B] dark:text-white border-l-4 border-[#1B1B1B] dark:border-[#F4EADE]"
-                        : "text-[#1B1B1B]/70 dark:text-[#F4EADE]/70 hover:bg-[#F4EADE]/20 dark:hover:bg-[#F4EADE]/10"
-                    }
-                    hover:text-[#1B1B1B] dark:hover:text-white hover:translate-x-1`}
+                        ? "bg-gradient-to-r from-[#F4EADE]/30 to-[#F4EADE]/20 dark:from-[#F4EADE]/20 dark:to-[#F4EADE]/10 text-[#1B1B1B] dark:text-white border-l-4 border-[#1B1B1B] dark:border-[#F4EADE] cursor-default"
+                        : "text-[#1B1B1B]/70 dark:text-[#F4EADE]/70 hover:bg-[#F4EADE]/20 dark:hover:bg-[#F4EADE]/10 hover:text-[#1B1B1B] dark:hover:text-white hover:translate-x-1"
+                    }`}
                 >
                   {link.name}
                 </Link>
