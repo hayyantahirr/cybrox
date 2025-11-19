@@ -113,7 +113,7 @@ export default function Sec5() {
                       href={info.link}
                       className="flex items-start gap-4 p-4 rounded-xl hover:bg-[#333333] transition-all duration-300 group"
                     >
-                      <div className="flex-shrink-0 w-12 h-12 bg-[#f4eade]/10 rounded-xl flex items-center justify-center text-[#f4eade] group-hover:bg-[#f4eade]/20 group-hover:scale-110 transition-all duration-300">
+                      <div className="shrink-0 w-12 h-12 bg-[#f4eade]/10 rounded-xl flex items-center justify-center text-[#f4eade] group-hover:bg-[#f4eade]/20 group-hover:scale-110 transition-all duration-300">
                         {info.icon}
                       </div>
                       <div className="flex-1">
@@ -188,7 +188,7 @@ export default function Sec5() {
           </div>
 
           {/* Bottom CTA */}
-          <div className="mt-16 text-center bg-gradient-to-br from-[#f4eade]/10 to-transparent rounded-3xl p-12 border border-[#f4eade]/10">
+          <div className="mt-16 text-center bg-linear-to-br from-[#f4eade]/10 to-transparent rounded-3xl p-12 border border-[#f4eade]/10">
             <h3
               className="text-3xl md:text-4xl font-bold text-[#f4eade] mb-4"
               style={{ fontFamily: "Nippo, sans-serif" }}
