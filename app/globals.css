@@ -27,7 +27,9 @@
   padding: 0;
   box-sizing: border-box;
 } */
-
+*{
+  /* border : 1px solid red */
+}
 /* ============================================
    BODY & BACKGROUND
    ============================================ */
@@ -184,4 +186,17 @@ a {
 
 .animate-scale-in {
   animation: scaleIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Animation delays */
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-700 {
+  animation-delay: 0.7s;
 }
