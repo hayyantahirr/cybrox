@@ -127,14 +127,14 @@ const Navbar = () => {
         transition-all duration-500 ease-out ${isScrolled ? "py-3" : "py-4"}`}
       >
         {/* Gradient overlay for depth - adds subtle shine effect */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#F4EADE]/5 via-transparent to-[#F4EADE]/5 rounded-2xl pointer-events-none" />
+        <div className="absolute inset-0 bg-linear-to-r from-[#F4EADE]/5 via-transparent to-[#F4EADE]/5 rounded-2xl pointer-events-none" />
 
         <div className="relative px-4 md:px-8 flex items-center justify-between">
           {/* ========== LOGO ========== */}
           {/* Custom Nippo font with gradient text and scale animation on hover */}
           <Link
             href="/"
-            className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-[#1B1B1B] to-[#1B1B1B]/70 
+            className="text-2xl md:text-3xl font-bold bg-linear-to-r from-[#1B1B1B] to-[#1B1B1B]/70 
             dark:from-[#F4EADE] dark:to-[#F4EADE]/70 bg-clip-text text-transparent 
             hover:scale-105 transition-transform duration-300 ease-out"
             style={{ fontFamily: "Nippo, sans-serif" }}
@@ -171,7 +171,7 @@ const Navbar = () => {
 
                   {/* ACTIVE INDICATOR: Animated bottom border */}
                   <span
-                    className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-gradient-to-r 
+                    className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-linear-to-r 
                     from-[#1B1B1B] to-[#1B1B1B]/50 dark:from-[#F4EADE] dark:to-[#F4EADE]/50 rounded-full
                     transition-all duration-500 ease-out ${
                       isActive ? "w-3/4 opacity-100" : "w-0 opacity-0"
@@ -180,7 +180,7 @@ const Navbar = () => {
 
                   {/* ACTIVE BACKGROUND: Subtle glow effect for active tab (always visible when active) */}
                   <span
-                    className={`absolute inset-0 bg-gradient-to-r from-[#F4EADE]/30 via-[#F4EADE]/20 to-[#F4EADE]/30 
+                    className={`absolute inset-0 bg-linear-to-r from-[#F4EADE]/30 via-[#F4EADE]/20 to-[#F4EADE]/30 
                     dark:from-[#F4EADE]/20 dark:via-[#F4EADE]/10 dark:to-[#F4EADE]/20 rounded-lg
                     transition-all duration-500 ease-out ${
                       isActive ? "opacity-100 scale-100" : "opacity-0 scale-95"
@@ -194,7 +194,7 @@ const Navbar = () => {
           {/* ========== CTA BUTTON ========== */}
           {/* Call-to-action button with gradient and shadow effects */}
           <button
-            className="hidden md:block px-6 py-2.5 bg-gradient-to-r from-[#1B1B1B] to-[#1B1B1B]/80 
+            className="hidden md:block px-6 py-2.5 bg-linear-to-r from-[#1B1B1B] to-[#1B1B1B]/80 
             dark:from-[#F4EADE] dark:to-[#F4EADE]/80 text-[#F4EADE] dark:text-[#1B1B1B] 
             rounded-lg font-semibold hover:shadow-lg hover:shadow-[#1B1B1B]/20 dark:hover:shadow-[#F4EADE]/20 
             hover:scale-105 transition-all duration-300 ease-out"
@@ -247,7 +247,7 @@ const Navbar = () => {
                   className={`relative block px-4 py-3 font-medium rounded-lg transition-all duration-500 ease-out
                     ${
                       isActive
-                        ? "bg-gradient-to-r from-[#F4EADE]/30 to-[#F4EADE]/20 dark:from-[#F4EADE]/20 dark:to-[#F4EADE]/10 text-[#1B1B1B] dark:text-white border-l-4 border-[#1B1B1B] dark:border-[#F4EADE] cursor-default"
+                        ? "bg-linear-to-r from-[#F4EADE]/30 to-[#F4EADE]/20 dark:from-[#F4EADE]/20 dark:to-[#F4EADE]/10 text-[#1B1B1B] dark:text-white border-l-4 border-[#1B1B1B] dark:border-[#F4EADE] cursor-default"
                         : "text-[#1B1B1B]/70 dark:text-[#F4EADE]/70 hover:bg-[#F4EADE]/20 dark:hover:bg-[#F4EADE]/10 hover:text-[#1B1B1B] dark:hover:text-white hover:translate-x-1"
                     }`}
                 >
@@ -257,7 +257,7 @@ const Navbar = () => {
             })}
             {/* Mobile CTA Button */}
             <button
-              className="w-full px-4 py-3 bg-gradient-to-r from-[#1B1B1B] to-[#1B1B1B]/80 
+              className="w-full px-4 py-3 bg-linear-to-r from-[#1B1B1B] to-[#1B1B1B]/80 
               dark:from-[#F4EADE] dark:to-[#F4EADE]/80 text-[#F4EADE] dark:text-[#1B1B1B] 
               rounded-lg font-semibold hover:shadow-lg transition-all duration-300 ease-out hover:scale-[1.02]"
             >

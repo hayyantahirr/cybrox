@@ -11,7 +11,7 @@ export default function Sec1() {
   ];
 
   return (
-    <section className="py-20 px-6 bg-gradient-to-b from-[#f4eade] to-white">
+    <section className="py-20 px-6 bg-linear-to-b from-[#f4eade] to-white">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">

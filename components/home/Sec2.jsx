@@ -17,7 +17,7 @@ export default function Sec2() {
                 priority
               />
               {/* Decorative overlay */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-[#1b1b1b]/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-linear-to-tr from-[#1b1b1b]/20 to-transparent"></div>
             </div>
 
             {/* Floating accent element */}
@@ -50,7 +50,7 @@ export default function Sec2() {
 
             <div className="space-y-4 pt-4">
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-[#1b1b1b] rounded-full flex items-center justify-center">
+                <div className="shrink-0 w-12 h-12 bg-[#1b1b1b] rounded-full flex items-center justify-center">
                   <span className="text-[#f4eade] text-xl font-bold">✓</span>
                 </div>
                 <div>
@@ -65,7 +65,7 @@ export default function Sec2() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-[#1b1b1b] rounded-full flex items-center justify-center">
+                <div className="shrink-0 w-12 h-12 bg-[#1b1b1b] rounded-full flex items-center justify-center">
                   <span className="text-[#f4eade] text-xl font-bold">✓</span>
                 </div>
                 <div>
@@ -80,7 +80,7 @@ export default function Sec2() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-[#1b1b1b] rounded-full flex items-center justify-center">
+                <div className="shrink-0 w-12 h-12 bg-[#1b1b1b] rounded-full flex items-center justify-center">
                   <span className="text-[#f4eade] text-xl font-bold">✓</span>
                 </div>
                 <div>
