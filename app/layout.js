@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Cybrox",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
 
         {/* Page transition wrapper with smooth fade and slide animations */}
         <div className="page-transition">{children}</div>
+        <Footer/>
       </body>
     </html>
   );
