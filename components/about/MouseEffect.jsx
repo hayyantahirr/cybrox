@@ -80,7 +80,7 @@ export default function MouseEffect({ children }) {
   }, []);
 
   return (
-    <div ref={containerRef} className="relative overflow-hidden bg-[#1a1a1a]">
+    <div ref={containerRef} className="relative overflow-hidden ">
       <div
         ref={glowRef}
         className={`
