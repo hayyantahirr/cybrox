@@ -14,7 +14,6 @@ const page = () => {
       <Sec1 />
       <Sec2 />
       <Sec3 />
-
       <Sec6 />
       <Sec5 />
     </>
