@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Sec4() {
   const socialPlatforms = [
     {
@@ -226,9 +228,9 @@ export default function Sec4() {
               Ready to start your project? Reach out to us on any platform or
               get in touch directly
             </p>
-            <button className="px-8 py-4 bg-[#f4eade] text-[#1b1b1b] rounded-full font-medium text-lg hover:bg-[#e5dbc8] hover:scale-105 transition-all duration-300 shadow-lg">
+            <Link href={"/services"} className="px-8 py-4 bg-[#f4eade] text-[#1b1b1b] rounded-full font-medium text-lg hover:bg-[#e5dbc8] hover:scale-105 transition-all duration-300 shadow-lg">
               Get In Touch
-            </button>
+            </Link>
           </div>
         </div>
       </div>

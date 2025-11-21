@@ -1,3 +1,4 @@
+import Link from "next/link";
 import MouseEffect from "./MouseEffect";
 
 export default function Hero() {
@@ -30,12 +31,12 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-row md:flex-row gap-4 justify-center items-center animate-scale-in">
-            <button className="px-8 py-4 bg-[#1b1b1b] text-[#f4eade] rounded-full font-medium text-lg hover:bg-[#2a2a2a] hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
+            <Link href={"/services"} className="px-8 py-4 bg-[#1b1b1b] text-[#f4eade] rounded-full font-medium text-lg hover:bg-[#2a2a2a] hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
               Get Started
-            </button>
-            <button className="px-8 py-4 bg-transparent border-2 border-[#1b1b1b] text-[#f4eade] rounded-full font-medium text-lg  hover:scale-105 transition-all duration-300">
+            </Link>
+            <Link href={"/about"} className="px-8 py-4 bg-transparent border-2 border-[#1b1b1b] text-[#f4eade] rounded-full font-medium text-lg  hover:scale-105 transition-all duration-300">
               Learn More
-            </button>
+            </Link>
           </div>
 
           {/* Scroll indicator */}

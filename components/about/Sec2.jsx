@@ -71,7 +71,7 @@ export default function Sec2() {
 
   return (
     <MouseEffect>
-      <section className="py-20 md:py-28 px-6 bg-linear-to-b from-white to-[#f4eade]/30">
+      <section id="team" className="py-20 md:py-28 px-6 bg-linear-to-b from-white to-[#f4eade]/30">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16 animate-fade-in">

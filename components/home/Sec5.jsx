@@ -1,3 +1,4 @@
+import Link from "next/link";
 import MouseEffect from "./MouseEffect";
 
 export default function Sec5() {
@@ -199,9 +200,9 @@ export default function Sec5() {
               Let's discuss how we can help bring your vision to life. find your
               Suitable servicees Now !
             </p>
-            <button className="px-8 py-4 bg-[#f4eade] text-[#1b1b1b] rounded-full font-medium text-lg hover:bg-[#e5dbc8] hover:scale-105 transition-all duration-300 shadow-lg">
+            <Link href={"/services"} className="px-8 py-4 bg-[#f4eade] text-[#1b1b1b] rounded-full font-medium text-lg hover:bg-[#e5dbc8] hover:scale-105 transition-all duration-300 shadow-lg">
               Explore Services
-            </button>
+            </Link>
           </div>
         </div>
       </section>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Sec2() {
   return (
@@ -96,9 +97,9 @@ export default function Sec2() {
             </div>
 
             <div className="pt-6">
-              <button className="px-8 py-4 bg-[#1b1b1b] text-[#f4eade] rounded-full font-medium text-lg hover:bg-[#2a2a2a] hover:scale-105 transition-all duration-300 shadow-lg">
+              <Link href={"/about/#team"} className="px-8 py-4 bg-[#1b1b1b] text-[#f4eade] rounded-full font-medium text-lg hover:bg-[#2a2a2a] hover:scale-105 transition-all duration-300 shadow-lg">
                 Meet Our Team
-              </button>
+              </Link >
             </div>
           </div>
         </div>

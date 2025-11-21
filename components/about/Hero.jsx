@@ -1,3 +1,4 @@
+import Link from "next/link";
 import MouseEffect from "./MouseEffect";
 
 export default function Hero() {
@@ -95,12 +96,12 @@ export default function Hero() {
 
           {/* CTA Section */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12 animate-fade-in delay-700">
-            <button className="px-8 py-4 bg-[#1F6F50] text-white rounded-full font-medium text-lg hover:bg-[#1F6F50]/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+            <Link href={"/about/#story"} className="px-8 py-4 bg-[#1F6F50] text-white rounded-full font-medium text-lg hover:bg-[#1F6F50]/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
               Our Story
-            </button>
-            <button className="px-8 py-4 bg-transparent border-2 border-[#1F6F50] text-[#1F6F50] rounded-full font-medium text-lg hover:bg-[#1F6F50]/5 hover:scale-105 transition-all duration-300">
+            </Link >
+            <Link href={"/about/#team"} className="px-8 py-4 bg-transparent border-2 border-[#1F6F50] text-[#1F6F50] rounded-full font-medium text-lg hover:bg-[#1F6F50]/5 hover:scale-105 transition-all duration-300">
               Meet the Team
-            </button>
+            </Link>
           </div>
         </div>
       </section>

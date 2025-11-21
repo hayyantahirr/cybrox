@@ -4,7 +4,7 @@ import MouseEffect from "./MouseEffect";
 export default function Sec1() {
   return (
     <MouseEffect>
-      <section className="py-20 md:py-28 px-6 bg-[#F4EAD4]">
+      <section id="story" className="py-20 md:py-28 px-6 bg-[#F4EAD4]">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
             {/* Left Content */}

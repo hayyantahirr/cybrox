@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import MouseEffect from "./MouseEffect";
+import Link from "next/link";
 
 export default function Sec3() {
   const [activePhase, setActivePhase] = useState(0);
@@ -317,9 +318,9 @@ export default function Sec3() {
             <p className="text-xl text-white/80 mb-6">
               Ready to start your journey with us?
             </p>
-            <button className="px-10 py-5 bg-linear-to-r from-[#1F6F50] to-[#F4C430] text-white rounded-full font-bold text-lg hover:scale-105 hover:shadow-2xl transition-all duration-300">
+            <Link href={"/services"} className="px-10 py-5 bg-linear-to-r from-[#1F6F50] to-[#F4C430] text-white rounded-full font-bold text-lg hover:scale-105 hover:shadow-2xl transition-all duration-300">
               Let's Build Together
-            </button>
+            </Link>
           </div>
         </div>
       </section>

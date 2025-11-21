@@ -193,14 +193,15 @@ const Navbar = () => {
 
           {/* ========== CTA BUTTON ========== */}
           {/* Call-to-action button with gradient and shadow effects */}
-          <button
+          <Link
+            href={"/services"}
             className="hidden md:block px-6 py-2.5 bg-linear-to-r from-[#1B1B1B] to-[#1B1B1B]/80 
             dark:from-[#F4EADE] dark:to-[#F4EADE]/80 text-[#F4EADE] dark:text-[#1B1B1B] 
             rounded-lg font-semibold hover:shadow-lg hover:shadow-[#1B1B1B]/20 dark:hover:shadow-[#F4EADE]/20 
             hover:scale-105 transition-all duration-300 ease-out"
           >
             Get Started
-          </button>
+          </Link>
 
           {/* ========== MOBILE MENU BUTTON ========== */}
           {/* Hamburger/Close icon toggle - visible only on mobile */}
